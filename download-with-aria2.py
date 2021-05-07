@@ -11,7 +11,7 @@ if (todo == "1"):
     print("专辑：{}".format(music.album))
     print("音频文件url：{}".format(music.url))
     os.system("aria2c --split 200 " + "\"" + music.url + "\"" + " " + "-o " +
-              "\"" + music.name + "\"")
+              "\"" + music.name + ".m4a" + "\"")
 elif (todo == "2"):
     playlist1 = input("请输入歌单id： ")
     playlist = cloudmusic.getPlaylist(playlist1)
